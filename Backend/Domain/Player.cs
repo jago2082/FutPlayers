@@ -1,9 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
+﻿
+using System;
 using System.ComponentModel.DataAnnotations;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Domain
 {
@@ -12,7 +9,7 @@ namespace Domain
         [Key]
         public int PlayerId { get; set; }
 
-        [MaxLength(80,ErrorMessage ="The max length for the fiels {0} is {1} characters")]
+        [MaxLength(80, ErrorMessage = "The max length for the fiels {0} is {1} characters")]
         [Required]
         public string Name { get; set; }
         [MaxLength(50, ErrorMessage = "The max length for the fiels {0} is {1} characters")]
@@ -20,7 +17,9 @@ namespace Domain
         public string LastName { get; set; }
 
         [Required]
-        [DataType(DataType.DateTime)]
+        [DataType(DataType.Date)]
+        [DisplayFormat(DataFormatString = "{0:dd/MM/yyyy}", ApplyFormatInEditMode = true)]
+        [Display(Name = "Birth Date")]
         public DateTime BirthDate { get; set; }
 
         public int SexId { get; set; }
@@ -41,7 +40,7 @@ namespace Domain
         [DataType(DataType.EmailAddress)]
         public string Email { get; set; }
 
-        [Range(1,double.MaxValue,ErrorMessage ="The minimun valu is {0} and maximun {1}")]
+        [Range(1, double.MaxValue, ErrorMessage = "The minimun valu is {0} and maximun {1}")]
         public double Weight { get; set; }
 
         [Range(1, double.MaxValue, ErrorMessage = "The minimun valu is {0} and maximun {1}")]
@@ -77,6 +76,12 @@ namespace Domain
         public bool Anickname { get; set; }
 
         public string Image { get; set; }
+
+        public virtual Sex Sex { get; set; }
+
+        public virtual Country Country { get; set; }
+
+        public virtual City City { get; set; }
 
     }
 }
