@@ -5,8 +5,6 @@ VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FutPlayers", "FutPlayers\FutPlayers.csproj", "{102AB765-0B66-49AB-A4E0-C5DCB63A4013}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FutPlayers.Tests", "FutPlayers.Tests\FutPlayers.Tests.csproj", "{A2FEB41A-705D-4AD2-820A-DCA67F01A6D0}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Domain", "Domain\Domain.csproj", "{5434E2F9-9E40-47CC-A361-2D2BED8ACDED}"
 EndProject
 Global
@@ -19,10 +17,6 @@ Global
 		{102AB765-0B66-49AB-A4E0-C5DCB63A4013}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{102AB765-0B66-49AB-A4E0-C5DCB63A4013}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{102AB765-0B66-49AB-A4E0-C5DCB63A4013}.Release|Any CPU.Build.0 = Release|Any CPU
-		{A2FEB41A-705D-4AD2-820A-DCA67F01A6D0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{A2FEB41A-705D-4AD2-820A-DCA67F01A6D0}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{A2FEB41A-705D-4AD2-820A-DCA67F01A6D0}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{A2FEB41A-705D-4AD2-820A-DCA67F01A6D0}.Release|Any CPU.Build.0 = Release|Any CPU
 		{5434E2F9-9E40-47CC-A361-2D2BED8ACDED}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{5434E2F9-9E40-47CC-A361-2D2BED8ACDED}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5434E2F9-9E40-47CC-A361-2D2BED8ACDED}.Release|Any CPU.ActiveCfg = Release|Any CPU
